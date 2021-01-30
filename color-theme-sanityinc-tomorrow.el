@@ -40,6 +40,7 @@
 ;;     M-x color-theme-sanityinc-tomorrow-blue
 ;;     M-x color-theme-sanityinc-tomorrow-bright
 ;;     M-x color-theme-sanityinc-tomorrow-eighties
+;;     M-x color-theme-sanityinc-tomorrow-akoppela
 ;;
 ;;; Credit:
 
@@ -105,6 +106,19 @@ executed."
                  (aqua . "#66cccc")
                  (blue . "#6699cc")
                  (purple . "#cc99cc")))
+    (akoppela . ((background . "#2d2d2d")
+                 (alt-background . "#333333333333")
+                 (current-line . "#393939")
+                 (selection . "#515151")
+                 (foreground . "#cccccc")
+                 (comment . "#999999")
+                 (red . "#ff9da4")
+                 (orange . "#f99157")
+                 (yellow . "#ffcc66")
+                 (green . "#99cc99")
+                 (aqua . "#66cccc")
+                 (blue . "#bbdaff")
+                 (purple . "#cc99cc")))
     (blue . ((background . "#002451")
              (alt-background . "#00002c2c5fdf")
              (current-line . "#00346e")
@@ -140,7 +154,7 @@ executed."
 Also sets background-mode to either 'light or 'dark, for use in
 setting `frame-background-mode'.
 
-`MODE' should be set to either 'day, 'night, 'eighties, 'blue or 'bright."
+`MODE' should be set to either 'day, 'night, 'eighties, 'akoppela', 'blue or 'bright."
   `(let* ((colors (or (cdr (assoc ,mode color-theme-sanityinc-tomorrow-colors))
                       (error "no such theme flavor")))
           (background   (cdr (assoc 'background colors)))
@@ -1666,6 +1680,12 @@ are bound."
   "Apply the tomorrow eighties theme."
   (interactive)
   (color-theme-sanityinc-tomorrow 'eighties))
+
+;;;###autoload
+(defun color-theme-sanityinc-tomorrow-akoppela ()
+  "Apply the tomorrow akoppela theme."
+  (interactive)
+  (color-theme-sanityinc-tomorrow 'akoppela))
 
 ;;;###autoload
 (defun color-theme-sanityinc-tomorrow-blue ()
