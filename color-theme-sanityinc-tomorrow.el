@@ -106,7 +106,7 @@ executed."
                  (aqua . "#66cccc")
                  (blue . "#6699cc")
                  (purple . "#cc99cc")))
-    (akoppela . ((background . "#2d2d2d")
+    (akoppela . ((background . "#000")
                  (alt-background . "#333333333333")
                  (current-line . "#393939")
                  (selection . "#515151")
