@@ -112,7 +112,7 @@ executed."
                  (selection . "#515151")
                  (foreground . "#cccccc")
                  (comment . "#999999")
-                 (red . "#d54e53")
+                 (red . "#ff9da4")
                  (orange . "#f99157")
                  (yellow . "#ffcc66")
                  (green . "#99cc99")
